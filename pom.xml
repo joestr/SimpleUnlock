@@ -1,0 +1,84 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>net.dertod2</groupId>
+  <artifactId>SimpleUnlock</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>SimpleUnlock</name>
+  <url>http://dertod2.net</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <build>
+    <resources>
+      <resource>
+        <directory>${project.basedir}/src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+    </resources>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.1</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  
+  <repositories>
+    <repository>
+      <id>spigot-repo</id>
+      <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+	</repository>
+    <repository>
+      <id>dertod2-repo</id>
+      <url>http://mvn.dertod2.net/nexus/content/repositories/snapshots/</url>
+	</repository>
+    <repository>
+      <id>pex-repo</id>
+      <url>http://pex-repo.aoeu.xyz/</url>
+	</repository>
+  </repositories>
+
+  <distributionManagement>
+    <repository>
+      <id>dertod2-repo</id>
+      <name>Releases</name>
+      <url>http://mvn.dertod2.net/nexus/content/repositories/releases/</url>
+    </repository>
+    <snapshotRepository>
+      <id>dertod2-repo</id>
+      <name>Snapshots</name>
+      <url>http://mvn.dertod2.net/nexus/content/repositories/snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
+  
+  <dependencies>
+    <dependency>
+      <groupId>org.spigotmc</groupId>
+	  <artifactId>spigot</artifactId>
+	  <version>1.8.8-R0.1-SNAPSHOT</version>
+	</dependency>
+	<dependency>
+	  <groupId>net.dertod2</groupId>
+	  <artifactId>DatabaseHandler</artifactId>
+	  <version>0.1.1-SNAPSHOT</version>
+	</dependency>
+    <dependency>
+    	<groupId>ru.tehkode</groupId>
+    	<artifactId>PermissionsEx</artifactId>
+    	<version>1.23.2-SNAPSHOT</version>  
+    	<scope>system</scope>
+    	<systemPath>${basedir}/PermissionsEx.jar</systemPath> 
+    </dependency>
+  </dependencies>
+</project>

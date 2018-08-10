@@ -1,0 +1,14 @@
+main: net.dertod2.SimpleUnlock.Binary.SimpleUnlock
+
+name: SimpleUnlock
+version: 1.0
+author: DerTod2
+website: http://dertod2.net/
+depend: [DatabaseHandler, PermissionsEx]
+
+commands:
+  'unlock':
+    usage: /<command>
+  'unlockadmin':
+    aliases: ['uadm']
+    usage: /<command>
