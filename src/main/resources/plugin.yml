@@ -4,7 +4,7 @@ name: SimpleUnlock
 version: 1.0
 author: DerTod2
 website: http://dertod2.net/
-depend: [DatabaseHandler, PermissionsEx]
+depend: [DatabaseHandler, LuckPerms]
 
 commands:
   'unlock':
