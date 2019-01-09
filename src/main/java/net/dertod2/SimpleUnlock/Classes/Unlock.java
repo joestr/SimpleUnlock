@@ -82,6 +82,8 @@ public class Unlock {
                         .makeGroupNode(groupName).build()
                 );
             }*/
+            permissionUser.clearParents();
+
             for (String groupName : addList) {
                 permissionUser.setPrimaryGroup(groupName);
             }
