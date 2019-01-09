@@ -1,17 +1,17 @@
-# In dieser Konfiguration können diverse Einstellungen getroffen werden
+# In dieser Konfiguration kï¿½nnen diverse Einstellungen getroffen werden
 
 welcome-message: ['&2Willkommen auf Play-United', '&2Bitte lese dir unsere Regeln unter', '&6 -> http://mcrules.play-united.de/', '&2durch und starte die Freischaltung mit /unlock']
 decline-message: ['&cDu kannst es in 15 Minuten erneut versuchen', '&cSchaue dir doch die Regeln erneut an unter: ', '&6-> http://mcrules.play-united.de/']
 accept-message: ['&aDu hast es geschafft!', '&aHerzlich willkommen auf Play-United.']
 
-# Gibt an wie viele Fragen mindestens beantwortet werden müssen, '0' bedeutet hierbei alle Fragen
-# Die drei nächsten Einstellungen gelten entweder PRO Frage ODER komplett. 
-# 'chances-mod' wird in Prozent angegeben und bestimmt abhängig von der Antwortmenge wieviele Chancen man hat
+# Gibt an wie viele Fragen mindestens beantwortet werden mï¿½ssen, '0' bedeutet hierbei alle Fragen
+# Die drei nï¿½chsten Einstellungen gelten entweder PRO Frage ODER komplett. 
+# 'chances-mod' wird in Prozent angegeben und bestimmt abhï¿½ngig von der Antwortmenge wieviele Chancen man hat
 # Dieser Wert wird aber nie weniger als 'min-chances' oder mehr als 'max-chances' sein.
-# Mit 'reset-chances-each-question' wird festgelegt ob die Versuche nach jeder Frage zurück gesetzt werden sollen
-# Achtung: Wenn 'reset-chances-each-question' auf false ist wird nur die Einstellung 'max-chances' berücksichtigt.
+# Mit 'reset-chances-each-question' wird festgelegt ob die Versuche nach jeder Frage zurï¿½ck gesetzt werden sollen
+# Achtung: Wenn 'reset-chances-each-question' auf false ist wird nur die Einstellung 'max-chances' berï¿½cksichtigt.
 # Die Einstellung 'decline-time' gibt an wie lange der Gast die Freischaltung NICHT erneut versuchen kann
-# wenn er zu viele Fehler gemacht hat. Declines sind nur temporär (im RAM), verschwinden also bei einem Neustart oder reload des Servers
+# wenn er zu viele Fehler gemacht hat. Declines sind nur temporï¿½r (im RAM), verschwinden also bei einem Neustart oder reload des Servers
 min-questions: 0
 min-chances: 2
 max-chances: 10
@@ -19,14 +19,14 @@ chances-mod: 50
 reset-chances-each-question: true
 decline-time: 15m
 
-# Wenn die Freischaltung bestanden wurde, aus welche Gruppe soll der Spieler entfernt bzw. hinzugefügt werden?
-group-add: [Player]
-group-del: [Guest]
+# Wenn die Freischaltung bestanden wurde, aus welche Gruppe soll der Spieler entfernt bzw. hinzugefï¿½gt werden?
+group-add: [player]
+group-del: [guest]
 
-# Wenn der Spieler in dieser Gruppe ist kann er keine Interaktionen in der Welt ausführen
-# Prüfungen finden nur statt wenn 'deny-guest-actions' auf true gesetzt ist
+# Wenn der Spieler in dieser Gruppe ist kann er keine Interaktionen in der Welt ausfï¿½hren
+# Prï¿½fungen finden nur statt wenn 'deny-guest-actions' auf true gesetzt ist
 # 'broadcast-unlock' legt fest ob eine Nachricht an alle Spieler auf dem Server gesendet werden soll wenn ein Spieler freigeschaltet wurde
-guest-group: Guest
+guest-group: guest
 deny-guest-actions: true
 broadcast-unlock: true
 
