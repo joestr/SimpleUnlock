@@ -8,7 +8,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>SimpleUnlock 1.13 Development</name>
+    <name>SimpleUnlock</name>
     <url>http://dertod2.net</url>
 
     <properties>
